@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   transition: 0.3s;
+   margin: 20px;
+}
+
+a:hover {
+    opacity: 0.7;
+
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #23232e;
+    height: 8vh;   
+}
+
+nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* formulário */
+.form-geral {
+    max-width: 600px;
+    margin: 40px auto; /* Espaçamento superior */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionado sombra leve */
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center; /* Centralizado */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-geral,
+select,
+textarea,
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.input-geral:focus,
+select:focus,
+textarea:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Destaque ao foco */
+    outline: none;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar apenas verticalmente */
+    height: 100px; /* Altura padrão */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .form-geral {
+        padding: 15px;
+    }
+    
+    legend {
+        font-size: 1.2em;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9em;
+    }
+}
+
+
+
+/* tabelas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.confirmacao {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* detalhes-filial */
+
+.detalhes-filial {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-filial h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.detalhes-filial p {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-filial strong {
+    color: #4CAF50;
+}
+
+.detalhes-filial label {
+    display: block;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 8px;
+}
+
+.detalhes-filial select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.detalhes-filial button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detalhes-filial button:hover {
+    background-color: #45a049;
+}
+
+.detalhes-filial a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #23232e;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.detalhes-filial a:hover {
+    background-color: #4CAF50;
+}
+
+/*Tela de Login e cadastro*/
+
+.body-login{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://c1.wallpaperflare.com/preview/677/837/310/abandoned-factory-hdr-old.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;}
+
+.tela-login{
+    background-color: rgba(0,0,0, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+        
+}
+
+.title-login{
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-login{
+
+}
+
+.input-login{
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+
+}
+
+.input-submit{
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.input-submit:hover{
+    background-color: #4CAF70;
+}
+
+.input-cadastro{
+    background-color: #4CAF50;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
